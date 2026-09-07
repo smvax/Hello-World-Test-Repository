@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MSVS-HelloWorld", "MSVS-Hel
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Triangle", "Triangle\Triangle.vcxproj", "{0C059592-A8D8-43BD-ABD9-DD78D5742376}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTests", "GTests\GTests.vcxproj", "{C016C8E0-57AE-4A21-9C15-53D426C9839F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{0C059592-A8D8-43BD-ABD9-DD78D5742376}.Release|x64.Build.0 = Release|x64
 		{0C059592-A8D8-43BD-ABD9-DD78D5742376}.Release|x86.ActiveCfg = Release|Win32
 		{0C059592-A8D8-43BD-ABD9-DD78D5742376}.Release|x86.Build.0 = Release|Win32
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Debug|x64.ActiveCfg = Debug|x64
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Debug|x64.Build.0 = Debug|x64
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Debug|x86.ActiveCfg = Debug|Win32
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Debug|x86.Build.0 = Debug|Win32
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Release|x64.ActiveCfg = Release|x64
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Release|x64.Build.0 = Release|x64
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Release|x86.ActiveCfg = Release|Win32
+		{C016C8E0-57AE-4A21-9C15-53D426C9839F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
