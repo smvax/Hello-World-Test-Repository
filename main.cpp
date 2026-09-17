@@ -6,15 +6,15 @@ int main() {
 
     double side = 0.0;
     double height = 0.0;
-    std::cout << "Программа для вычисления площади треугольника." << std::endl;
-    std::cout << "Введите длину стороны треугольника: ";
+    std::cout << "Program for calculating area of your triangle." << std::endl;
+    std::cout << "Input side length: ";
     std::cin >> side;
-    std::cout << "Введите высоту, прилегающую к этой стороне: ";
+    std::cout << "Input adjoined height: ";
     std::cin >> height;
 
     try {
         Triangle inputTriangle(side, height);
-        std::cout << std::endl << "Площадь введенного треугольника равна: "
+        std::cout << std::endl << "Area of this triangle: "
             << inputTriangle.calculateArea() << std::endl;
 
     }
