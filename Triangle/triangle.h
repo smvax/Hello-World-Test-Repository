@@ -4,8 +4,8 @@
 
 class Triangle {
 private:
-    double side;
-    double height;
+    double _side;
+    double _height;
 
 public:
     //constructors
@@ -19,27 +19,27 @@ public:
         if (s <= 0) {
             throw std::invalid_argument("ERROR: Length must be positive!");
         }
-        side = s;
+        _side = s;
     }
 
     void setHeight(double h) {
         if (h <= 0) {
             throw std::invalid_argument("ERROR: Length must be positive!");
         }
-        height = h;
+        _height = h;
     }
 
     //getters
     double getSide() const noexcept {
-        return side;
+        return _side;
     }
 
     double getHeight() const noexcept {
-        return height;
+        return _height;
     }
 
     //methods
     double calculateArea() const {
-        return 0.5 * side * height;
+        return 0.5 * _side * _height;
     }
 };
