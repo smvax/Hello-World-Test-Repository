@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 #include <stdexcept>
 
 class Triangle {
@@ -9,37 +8,23 @@ private:
 
 public:
     //constructors
-    Triangle(double s, double h) { //initialisation constructor
-        setSide(s);
-        setHeight(h);
-    }
+    Triangle(double s, double h);
 
     //setters
-    void setSide(double s) {
-        if (s <= 0) {
-            throw std::invalid_argument("ERROR: Length must be positive!");
-        }
-        _side = s;
-    }
-
-    void setHeight(double h) {
-        if (h <= 0) {
-            throw std::invalid_argument("ERROR: Length must be positive!");
-        }
-        _height = h;
-    }
+    void setSide(double s);
+    void setHeight(double h);
 
     //getters
-    double getSide() const noexcept {
+    inline double getSide() const noexcept {
         return _side;
     }
 
-    double getHeight() const noexcept {
+    inline double getHeight() const noexcept {
         return _height;
     }
 
     //methods
-    double calculateArea() const {
+    inline double calculateArea() const {
         return 0.5 * _side * _height;
     }
 };
