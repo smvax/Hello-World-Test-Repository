@@ -15,16 +15,21 @@ public:
     void setHeight(double h);
 
     //getters
-    inline double getSide() const noexcept {
-        return _side;
-    }
-
-    inline double getHeight() const noexcept {
-        return _height;
-    }
+    inline double getSide() const noexcept;
+    inline double getHeight() const noexcept;
 
     //methods
-    inline double calculateArea() const {
-        return 0.5 * _side * _height;
-    }
+    inline double calculateArea() const noexcept;
 };
+
+inline double Triangle::getSide() const noexcept {
+    return _side;
+}
+
+inline double Triangle::getHeight() const noexcept {
+    return _height;
+}
+
+inline double Triangle::calculateArea() const noexcept {
+    return 0.5 * _side * _height;
+}

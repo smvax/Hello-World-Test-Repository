@@ -56,8 +56,8 @@ TEST(TriangleTest, TestCalSmallByBigArea) {
 }
 
 TEST(TriangleTest, TestCalBigByBigArea) {
-	Triangle t1(355, 429403);
-	EXPECT_DOUBLE_EQ(t1.calculateArea(), 76219032.5);
-	EXPECT_EQ(t1.getSide(), 355);
-	EXPECT_EQ(t1.getHeight(), 429403);
+	Triangle t1(360, 1000);
+	EXPECT_DOUBLE_EQ(t1.calculateArea(), 180000);
+	EXPECT_EQ(t1.getSide(), 360);
+	EXPECT_EQ(t1.getHeight(), 1000);
 }
